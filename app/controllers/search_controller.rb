@@ -4,7 +4,12 @@ class SearchController < ApplicationController
 
   def go
     if params[:query]
-      @results = Twitter::Search.new(params[:query])
+      begin
+        @results = Rubytter.new.search(params[:query])
+      rescue Exception => e
+        flash[:notice] = "FAIL WHALE: #{e.message}"
+        render "index" and return
+      end
       flash[:notice] = "Your search returned #{@results.count} results"
       render "index"
     else

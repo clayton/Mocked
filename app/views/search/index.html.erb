@@ -9,7 +9,7 @@
   <ul class="results">
     <% @results.each do |result| %>
       <li class="<%= cycle('even','odd') %>">
-        <%= result.text %> from <strong><%= result.from_user %></strong> on <em><%= result.created_at.to_s %></em>
+        <%= result.text %> from <strong><%= result.user.screen_name %></strong> on <em><%= result.created_at.to_s %></em>
       </li>
     <% end %>
   </ul>
