@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Searching Twitter</title>
+    <style type="text/css" media="screen">
+      body{
+        font-family:verdana;
+      }
+      ul.results{
+        font-size: 1.4em;
+        list-style-type:none;
+        margin:0;
+        padding:0;
+      }
+
+      p.notice{
+        border:1px solid black;
+        background: #eee;
+        padding:1em;
+        font-family:monospace;
+        font-size:1.4em
+      }
+      li{
+        padding:2em 1.5em;
+      }
+      li.odd{
+        background: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>
