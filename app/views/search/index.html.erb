@@ -1,16 +1,15 @@
-<h1>Twitter Search</h1>
+<h1>Github User Search</h1>
 <% form_tag search_url do %>
   <p><%= text_field_tag :query, params[:query] %>&nbsp;<%= submit_tag "Search" %></p>
 <% end %>
 <% if flash[:notice].present? %>
   <p class="notice"><%= flash[:notice] %></p>
 <% end %>
-<% if @results %>
-  <ul class="results">
-    <% @results.each do |result| %>
-      <li class="<%= cycle('even','odd') %>">
-        <%= result.text %> from <strong><%= result.user.screen_name %></strong> on <em><%= result.created_at.to_s %></em>
-      </li>
-    <% end %>
-  </ul>
+<% if @result %>
+  <div id="user">
+    <p>Name: <%= @result.name %></p>
+    <p>Public Repos: <%= @result.public_repo_count %></p>
+    <p>Location: <%= @result.location %></p>
+    <p>Login: <%= @result.login %></p>
+  </div>
 <% end %>

@@ -5,16 +5,18 @@ class SearchController < ApplicationController
   def go
     if params[:query]
       begin
-        @results = Rubytter.new.search(params[:query])
+        @result = Octopi::User.find(params[:query])
       rescue Exception => e
-        flash[:notice] = "FAIL WHALE: #{e.message}"
-        render "index" and return
+        flash[:notice] = "OCTOFAIL: #{e.message}"
       end
-      flash[:notice] = "Your search returned #{@results.count} results"
-      render "index"
+      if @result
+        flash[:notice] = "We found a user!"
+      else
+        flash[:notice] = "Hrm, nobody with that name exists..."
+      end
     else
       flash[:notice] = "You must specify a search query!"
-      render "index"
     end
+      render "index"
   end
 end
