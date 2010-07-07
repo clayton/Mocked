@@ -7,8 +7,9 @@ Feature: Twitter Search
     Given I am on the homepage
     And I fill in "query" with "integrum"
     When I press "Search"
+    Then show me the page
     Then I should see "Your search returned 15 results"
-    And I should see "Integrum" within "li.odd"
+    And I should see "@integrum"
 
 
 

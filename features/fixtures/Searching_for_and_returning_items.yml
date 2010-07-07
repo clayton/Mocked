@@ -1,0 +1,56 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://search.twitter.com:80/search.json?q=integrum
+    body: 
+    headers: 
+      connection: 
+      - close
+      user-agent: 
+      - Ruby Twitter Gem
+      host: 
+      - search.twitter.com
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-varnish: 
+      - "1050766183"
+      expires: 
+      - Wed, 07 Jul 2010 01:12:47 GMT
+      connection: 
+      - close
+      via: 
+      - 1.1 varnish
+      content-type: 
+      - application/json; charset=utf-8
+      x-cache: 
+      - MISS
+      x-served-by: 
+      - searchweb011.twitter.com
+      x-served-from: 
+      - searchdb011
+      x-runtime: 
+      - "0.08781"
+      server: 
+      - hi
+      date: 
+      - Wed, 07 Jul 2010 01:07:47 GMT
+      x-cache-svr: 
+      - searchweb011.twitter.com
+      content-length: 
+      - "7829"
+      age: 
+      - "0"
+      vary: 
+      - Accept-Encoding
+      cache-control: 
+      - max-age=15, must-revalidate, max-age=300
+      status: 
+      - 200 OK
+      x-timeline-cache-hit: 
+      - Hit
+    body: "{\"results\":[{\"profile_image_url\":\"http://a1.twimg.com/profile_images/191044364/profile-conrey_normal.jpg\",\"created_at\":\"Tue, 06 Jul 2010 21:59:30 +0000\",\"from_user\":\"conrey\",\"metadata\":{\"result_type\":\"recent\"},\"to_user_id\":2406911,\"text\":\"@willbradley It'll get blogged - you follow the @integrum and @gangplank blogs right?\",\"id\":17899168352,\"from_user_id\":29719,\"to_user\":\"willbradley\",\"geo\":null,\"iso_language_code\":\"en\",\"source\":\"&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;\"},{\"profile_image_url\":\"http://a1.twimg.com/profile_images/191044364/profile-conrey_normal.jpg\",\"created_at\":\"Tue, 06 Jul 2010 21:41:19 +0000\",\"from_user\":\"conrey\",\"metadata\":{\"result_type\":\"recent\"},\"to_user_id\":1515753,\"text\":\"@courdek @jennymesserly @jasonjgeiger - let me see what I can do to set up things for such a class from @integrum\",\"id\":17898204574,\"from_user_id\":29719,\"to_user\":\"courdek\",\"geo\":null,\"iso_language_code\":\"en\",\"source\":\"&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;\"},{\"profile_image_url\":\"http://a1.twimg.com/profile_images/702024564/profile-twitter_normal.gif\",\"created_at\":\"Tue, 06 Jul 2010 21:30:35 +0000\",\"from_user\":\"jasonjgeiger\",\"metadata\":{\"result_type\":\"recent\"},\"to_user_id\":1515753,\"text\":\"@courdek @gangplank @integrum i'd be interested in a ruby/rails crash course as well!\",\"id\":17897621990,\"from_user_id\":21124906,\"to_user\":\"courdek\",\"geo\":null,\"iso_language_code\":\"en\",\"source\":\"&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;\"},{\"profile_image_url\":\"http://a1.twimg.com/profile_images/565970870/img_0630_web_normal.jpg\",\"created_at\":\"Tue, 06 Jul 2010 21:21:20 +0000\",\"from_user\":\"jennymesserly\",\"metadata\":{\"result_type\":\"recent\"},\"to_user_id\":1515753,\"text\":\"@courdek @gangplank @integrum i would also be interested in that crash course!\",\"id\":17897191449,\"from_user_id\":1811109,\"to_user\":\"courdek\",\"geo\":null,\"iso_language_code\":\"en\",\"source\":\"&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;\"},{\"profile_image_url\":\"http://a1.twimg.com/profile_images/770777112/ClockmakersEyeball_normal.jpg\",\"created_at\":\"Tue, 06 Jul 2010 21:05:09 +0000\",\"from_user\":\"courdek\",\"metadata\":{\"result_type\":\"recent\"},\"to_user_id\":null,\"text\":\"Would anyone at @gangplank or @integrum be interested in doing a small ruby/rails crash course at a hacknight in the near future?\",\"id\":17896364582,\"from_user_id\":1515753,\"geo\":null,\"iso_language_code\":\"en\",\"source\":\"&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;\"},{\"profile_image_url\":\"http://a1.twimg.com/profile_images/72841504/integrum_icon_normal.gif\",\"created_at\":\"Tue, 06 Jul 2010 16:45:08 +0000\",\"from_user\":\"integrum\",\"metadata\":{\"result_type\":\"recent\"},\"to_user_id\":null,\"text\":\"Learn the pitfalls of migrating from Rails 2.x to Rails 3.0 - July 27th 7pm - http://phxrails.com\",\"id\":17880242504,\"from_user_id\":174729,\"geo\":null,\"iso_language_code\":\"en\",\"source\":\"&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;\"},{\"profile_image_url\":\"http://a1.twimg.com/profile_images/714082336/P2230041RE_normal.jpg\",\"created_at\":\"Tue, 06 Jul 2010 09:57:48 +0000\",\"from_user\":\"jackrider\",\"metadata\":{\"result_type\":\"recent\"},\"to_user_id\":null,\"text\":\"Photo: descriptio in integrum al actualei mele stari de spirit si intelect. http://tumblr.com/xvycu74px\",\"id\":17857045103,\"from_user_id\":11616741,\"geo\":null,\"iso_language_code\":\"it\",\"source\":\"&lt;a href=&quot;http://www.tumblr.com/&quot; rel=&quot;nofollow&quot;&gt;Tumblr&lt;/a&gt;\"},{\"profile_image_url\":\"http://a1.twimg.com/profile_images/191044364/profile-conrey_normal.jpg\",\"created_at\":\"Tue, 06 Jul 2010 00:59:14 +0000\",\"from_user\":\"conrey\",\"metadata\":{\"result_type\":\"recent\"},\"to_user_id\":null,\"text\":\"making progress @gangplank 3.0 - the @integrum desks seems to be almost ready to go at least\",\"id\":17829705426,\"from_user_id\":29719,\"geo\":null,\"iso_language_code\":\"en\",\"source\":\"&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;\"},{\"profile_image_url\":\"http://a1.twimg.com/profile_images/301327186/avatar_200x200_normal.JPG\",\"created_at\":\"Mon, 05 Jul 2010 19:46:19 +0000\",\"from_user\":\"_tomash\",\"metadata\":{\"result_type\":\"recent\"},\"to_user_id\":null,\"text\":\"http://bit.ly/8Yv0Qg awesome recruitment technique #ruby #github\",\"id\":17813037461,\"from_user_id\":16272502,\"geo\":null,\"iso_language_code\":\"en\",\"source\":\"&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;\"},{\"profile_image_url\":\"http://a3.twimg.com/profile_images/393207515/Sunglasses2_normal.JPG\",\"created_at\":\"Sun, 04 Jul 2010 23:09:00 +0000\",\"from_user\":\"fernasbest\",\"metadata\":{\"result_type\":\"recent\"},\"to_user_id\":null,\"text\":\"Uuhuu &quot;restitutio ad integrum&quot;... Parece um nome de um feiti\\u00c7o do harry potter lol\",\"id\":17749841565,\"from_user_id\":10375332,\"geo\":null,\"iso_language_code\":\"pt\",\"source\":\"&lt;a href=&quot;http://www.tweetaPorSMS.com&quot; rel=&quot;nofollow&quot;&gt;TweetaPorSMS.com&lt;/a&gt;\"},{\"profile_image_url\":\"http://s.twimg.com/a/1277506381/images/default_profile_3_normal.png\",\"created_at\":\"Sat, 03 Jul 2010 20:01:12 +0000\",\"from_user\":\"StPatricksCat\",\"metadata\":{\"result_type\":\"recent\"},\"to_user_id\":null,\"text\":\"RT @LiberProverbia: degluti\\u00e1mus eum sicut inf\\u00e9rnus viv\\u00e9ntem, et \\u00edntegrum quasi descend\\u00e9ntem in lacum; (Proverbia 1:12)\",\"id\":17673660628,\"from_user_id\":94843116,\"geo\":null,\"iso_language_code\":\"it\",\"source\":\"&lt;a href=&quot;http://www.snaptu.com&quot; rel=&quot;nofollow&quot;&gt;Snaptu.com&lt;/a&gt;\"},{\"profile_image_url\":\"http://a1.twimg.com/profile_images/191044364/profile-conrey_normal.jpg\",\"created_at\":\"Sat, 03 Jul 2010 16:38:53 +0000\",\"from_user\":\"conrey\",\"metadata\":{\"result_type\":\"recent\"},\"to_user_id\":null,\"text\":\"the @integrum engineering team at work... http://www.vimeo.com/13045764\",\"id\":17662186393,\"from_user_id\":29719,\"geo\":null,\"iso_language_code\":\"en\",\"source\":\"&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;\"},{\"profile_image_url\":\"http://a1.twimg.com/profile_images/762445546/forty-avatar_normal.gif\",\"created_at\":\"Sat, 03 Jul 2010 03:11:14 +0000\",\"from_user\":\"fortyagency\",\"metadata\":{\"result_type\":\"recent\"},\"to_user_id\":null,\"text\":\"Love the new @scrumalliance site thanks to @fortyagency and @integrum (via @howardsublett)\",\"id\":17620541040,\"from_user_id\":902061,\"geo\":null,\"iso_language_code\":\"en\",\"source\":\"&lt;a href=&quot;http://twitter.com&quot; rel=&quot;nofollow&quot;&gt;Tweetie for Mac&lt;/a&gt;\"},{\"profile_image_url\":\"http://a1.twimg.com/profile_images/931546548/TwitterIcon600_normal.jpg\",\"created_at\":\"Fri, 02 Jul 2010 23:51:06 +0000\",\"from_user\":\"phxsug\",\"metadata\":{\"result_type\":\"recent\"},\"to_user_id\":null,\"text\":\"RT @howardsublett Love the new @scrumalliance site thanks to @fortyagency and @integrum &lt;- #phx talent!\",\"id\":17609288134,\"from_user_id\":24267896,\"geo\":null,\"iso_language_code\":\"en\",\"source\":\"&lt;a href=&quot;http://twidroid.com&quot; rel=&quot;nofollow&quot;&gt;twidroid&lt;/a&gt;\"},{\"profile_image_url\":\"http://a1.twimg.com/profile_images/191044364/profile-conrey_normal.jpg\",\"created_at\":\"Fri, 02 Jul 2010 18:33:13 +0000\",\"from_user\":\"conrey\",\"metadata\":{\"result_type\":\"recent\"},\"to_user_id\":null,\"text\":\"And @Integrum loves @shirteeapp too! http://tweetphoto.com/30368074\",\"id\":17591231373,\"from_user_id\":29719,\"geo\":null,\"iso_language_code\":\"no\",\"source\":\"&lt;a href=&quot;http://www.echofon.com/&quot; rel=&quot;nofollow&quot;&gt;Echofon&lt;/a&gt;\"}],\"max_id\":17905962733,\"since_id\":0,\"refresh_url\":\"?since_id=17905962733&q=integrum\",\"next_page\":\"?page=2&max_id=17905962733&q=integrum\",\"results_per_page\":15,\"page\":1,\"completed_in\":0.075013,\"query\":\"integrum\"}"
+    http_version: "1.1"
